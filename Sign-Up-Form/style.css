@@ -1,41 +1,49 @@
 /*Styling Background section */
 body {
   display: flex;
+  justify-content: center;
   flex-direction: row;
-  background-color: #c2bdb9;
+  background-color: black;
 }
 h1 {
-  font-size: 30px;
+  font-size: 15px;
   font-weight: bold;
 }
+p {
+  font-size: 0.95 rem;
+}
 .background-img {
-  width: 40vw;
+  width: 25vw;
   height: 100vh;
   width: max-content;
   background-size: cover;
   clear: both;
   object-fit: contain;
 }
+.background {
+  justify-content: center;
+}
 .logo {
   width: 200px;
   opacity: 80%;
   position: absolute;
-  left: 125px;
-  top: 50px;
+  left: 250px;
+  top: 35px;
 }
 .logo > h1 {
   font-size: 25px;
-  color: red;
+  color: lightblue;
 }
 .logo > p {
   color: blue;
 }
 .credit {
+  position: relative;
   width: 200px;
-  opacity: 80%;
-  position: absolute;
-  left: 50px;
+  opacity: 100%;
+  right: 0;
   bottom: 50px;
+  margin: 0 auto;
 }
 
 /* Styling form section */
@@ -43,9 +51,10 @@ h1 {
 .content {
   display: flex;
   flex-direction: column;
-  width: 60vw;
+  width: 45vw;
   height: 100vh;
   align-items: center;
+  background-color: #c2bdb9;
 }
 span {
   font-style: italic;
