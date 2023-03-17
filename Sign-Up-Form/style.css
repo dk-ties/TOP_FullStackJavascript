@@ -21,7 +21,7 @@ p {
   object-fit: contain;
 }
 .background {
-  justify-content: center;
+  height: 100vh;
 }
 .logo {
   width: 200px;
