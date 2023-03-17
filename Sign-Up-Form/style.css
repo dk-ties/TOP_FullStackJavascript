@@ -1,4 +1,8 @@
 /*Styling Background section */
+body {
+  display: flex;
+  flex-direction: row;
+}
 
 .background-img {
   width: 40vw;
@@ -10,10 +14,30 @@
 }
 .logo {
   width: 200px;
-  opacity: 50%;
+  opacity: 80%;
   position: absolute;
-  left: 100px;
+  left: 125px;
   top: 50px;
+}
+.logo > h1 {
+  font-size: 25px;
+  color: red;
+}
+.logo > p {
+  color: blue;
+}
+.credit {
+  width: 200px;
+  opacity: 80%;
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
 }
 
 /* Styling form section */
+
+.form {
+  width: 60vw;
+  height: 100vh;
+  background-color: black;
+}
