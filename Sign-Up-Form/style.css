@@ -1,0 +1,19 @@
+/*Styling Background section */
+
+.background-img {
+  width: 40vw;
+  height: 100vh;
+  width: max-content;
+  background-size: cover;
+  clear: both;
+  object-fit: contain;
+}
+.logo {
+  width: 200px;
+  opacity: 50%;
+  position: absolute;
+  left: 100px;
+  top: 50px;
+}
+
+/* Styling form section */
