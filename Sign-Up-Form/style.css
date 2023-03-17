@@ -36,8 +36,23 @@ body {
 
 /* Styling form section */
 
-.form {
+.content {
+  display: flex;
+  flex-direction: column;
   width: 60vw;
   height: 100vh;
-  background-color: black;
+  align-items: center;
+}
+span {
+  font-style: italic;
+}
+
+.header {
+  width: 30vw;
+  border: 1px pink solid;
+  margin-top: 50px;
+}
+.header > h1 {
+  font-size: larger;
+  font-weight: bolder;
 }
