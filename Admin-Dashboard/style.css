@@ -1,0 +1,28 @@
+.wrapper {
+  height: 90vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 5fr;
+  gap: 15px;
+}
+
+.header,
+.sidebar,
+.content {
+  border: 1px solid black;
+  background-color: lightblue;
+}
+
+.header {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.sidebar {
+  grid-row: 1/3;
+}
+
+.content {
+  grid-row: 2/3;
+}
