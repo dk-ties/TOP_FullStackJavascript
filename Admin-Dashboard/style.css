@@ -11,8 +11,8 @@
 .header,
 .sidebar,
 .content {
-  border: 1px solid black;
   background-color: lightblue;
+  border-radius: 5px;
 }
 
 .header {
@@ -163,4 +163,39 @@ img {
 .headerBot > .text > h1 {
   font-weight: bolder;
   font-size: 1.5rem;
+}
+
+/* content section */
+.content {
+  display: flex;
+}
+
+/* content cards */
+.card {
+  flex: 2;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card > .cardCards {
+  margin: 15px;
+  border-left: solid 0.8rem #f0b429;
+  border-top: 1px white solid;
+  border-right: 1px white solid;
+  border-bottom: 0.1px white solid;
+  border-radius: 3px;
+}
+.card > .cardCards > * {
+  margin: 5px 0px 0px 10px;
+}
+
+/* content annouc */
+.annouc {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.Announcements {
+  flex: 1;
 }
