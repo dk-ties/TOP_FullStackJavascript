@@ -76,3 +76,16 @@ img {
   margin-left: 5px;
 }
 /* Header section */
+
+.header {
+  display: flex;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+
+.headerTop,
+.headerBot {
+  width: 100%;
+  max-height: 50%;
+  border: 1px solid black;
+}
