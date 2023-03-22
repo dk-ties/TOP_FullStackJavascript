@@ -1,9 +1,9 @@
 /* Overall layout */
 .wrapper {
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 225px 5fr;
   grid-template-rows: 1fr 5fr;
   gap: 5px;
 }
@@ -41,6 +41,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  align-self: center;
   flex-wrap: wrap;
 }
 .topNav {
@@ -93,7 +94,8 @@ img {
 .headerSearch {
   flex: 5;
   justify-self: end;
-  margin: 5px 0 5px 0;
+  margin: 10px 0 10px 0;
+  background-color: #c2b280;
 }
 .headerTop > img {
   height: 30px;
@@ -181,9 +183,9 @@ img {
 .card > .cardCards {
   margin: 15px;
   border-left: solid 0.8rem #f0b429;
-  border-top: 1px white solid;
-  border-right: 1px white solid;
-  border-bottom: 0.1px white solid;
+  border-top: 0.2rem white outset;
+  border-right: 0.2rem white outset;
+  border-bottom: 0.2rem white outset;
   border-radius: 3px;
 }
 .card > .cardCards > * {
@@ -196,6 +198,49 @@ img {
   display: flex;
   flex-direction: column;
 }
+/* content annouce announcements */
 .Announcements {
   flex: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  margin: 15px 5px 10px 0;
+  border: 0.2rem outset white;
+}
+.Announcements > h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.Trending {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.annoucementsInfo {
+  border-bottom: 1px solid black;
+  padding: 0 10px 10px 10px;
+}
+.annoucementsInfo > h1 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+/* content annouce trending */
+.Trending > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.Trending > div > img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  display: inline;
+}
+.Trending > div > div > h1 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.Trending > h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
