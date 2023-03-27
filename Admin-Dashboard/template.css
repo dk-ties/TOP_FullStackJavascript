@@ -1,0 +1,246 @@
+/* Overall layout */
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 225px 5fr;
+  grid-template-rows: 1fr 5fr;
+  gap: 5px;
+}
+
+.header,
+.sidebar,
+.content {
+  background-color: lightblue;
+  border-radius: 5px;
+}
+
+.header {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.sidebar {
+  grid-row: 1/3;
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 1fr 3fr 1fr 2fr;
+  grid-template-columns: 100%;
+  overflow: auto;
+}
+
+.content {
+  grid-row: 2/3;
+}
+/* Sidebar section */
+.logo {
+  font-weight: bolder;
+  grid-row: 1/2;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-self: center;
+  flex-wrap: wrap;
+}
+.topNav {
+  grid-row: 2/3;
+}
+.botNav {
+  grid-row: 4/5;
+}
+.topNav,
+.botNav {
+  display: grid;
+  grid-auto-rows: minmax(50px, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+li {
+  border: 0.1px solid darkcyan;
+  border-radius: 5px;
+  height: 30px;
+  width: clamp(100px, 75%, 500px);
+  text-align: end;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c2b280;
+  padding-right: 5px;
+}
+img {
+  display: inline;
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: 5px;
+}
+/* Header section */
+/* HeaderTop */
+.header {
+  display: flex;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+
+.headerTop {
+  width: 100%;
+  max-height: 40%;
+
+  display: flex;
+}
+
+.headerSearch {
+  flex: 5;
+  justify-self: end;
+  margin: 10px 0 10px 0;
+  background-color: #c2b280;
+}
+.headerTop > img {
+  height: 30px;
+  width: 30px;
+  align-self: center;
+  margin: 5px;
+}
+
+.headerTop :nth-child(1) {
+  order: 1;
+}
+.headerTop :nth-child(2) {
+  order: 4;
+}
+.headerTop :nth-child(3) {
+  order: 3;
+}
+.headerTop :nth-child(4) {
+  order: 2;
+}
+.headerTop :nth-child(5) {
+  order: 5;
+}
+/* HeaderBot */
+
+.headerBot {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr 1fr 1fr 1fr;
+  gap: 5px;
+}
+
+.headerBot > img {
+  width: 75px;
+  height: 75px;
+}
+.headerBot > button {
+  height: 33px;
+  width: 99px;
+  border-radius: 15px;
+  align-self: end;
+  margin-bottom: 10px;
+  background-color: #c2b280;
+}
+.headerBot :nth-child(1) {
+  grid-column: 1/2;
+}
+.headerBot :nth-child(2) {
+  grid-column: 2/3;
+  align-self: center;
+  margin-left: 10px;
+}
+.headerBot :nth-child(3) {
+  grid-column: 4/5;
+}
+.headerBot :nth-child(4) {
+  grid-column: 5/6;
+}
+.headerBot :nth-child(5) {
+  grid-column: 6/7;
+}
+.headerBot > .text > p {
+  margin-bottom: 15px;
+  font: 1rem;
+}
+.headerBot > .text > h1 {
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+/* content section */
+.content {
+  display: flex;
+}
+
+/* content cards */
+.card {
+  flex: 2;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card > .cardCards {
+  margin: 15px;
+  border-left: solid 0.8rem #f0b429;
+  border-top: 0.2rem white outset;
+  border-right: 0.2rem white outset;
+  border-bottom: 0.2rem white outset;
+  border-radius: 3px;
+}
+.card > .cardCards > * {
+  margin: 5px 0px 0px 10px;
+}
+
+/* content annouc */
+.annouc {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+/* content annouce announcements */
+.Announcements {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  margin: 15px 5px 10px 0;
+  border: 0.2rem outset white;
+}
+.Announcements > h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.Trending {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.annoucementsInfo {
+  border-bottom: 1px solid black;
+  padding: 0 10px 10px 10px;
+}
+.annoucementsInfo > h1 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+/* content annouce trending */
+.Trending > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.Trending > div > img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  display: inline;
+}
+.Trending > div > div > h1 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.Trending > h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}

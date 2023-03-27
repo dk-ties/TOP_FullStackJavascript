@@ -1,0 +1,26 @@
+{
+  "name": "top_fullstackjavascript",
+  "version": "1.0.0",
+  "description": "All project from The odin project - Full stack Javascript curriculum",
+  "main": "eslintTest.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dk-ties/TOP_FullStackJavascript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dk-ties/TOP_FullStackJavascript/issues"
+  },
+  "homepage": "https://github.com/dk-ties/TOP_FullStackJavascript#readme",
+  "devDependencies": {
+    "eslint": "^8.36.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5"
+  }
+}
