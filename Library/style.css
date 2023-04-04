@@ -1,4 +1,8 @@
 .main {
+  /*background: url(kimberly-farmer-lUaaKCUANVI-unsplash.jpg) no-repeat fixed
+    center;
+  background-size: contain;*/
+  background-color: lightgrey;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -17,7 +21,19 @@
 .sidebar {
   border: 1px solid black;
   flex: 1;
+  display: grid;
+  grid-template-rows: 1fr 5fr;
 }
 .content {
   flex: 5;
+}
+.addNewBook {
+  height: 25px;
+  margin: 10px;
+  grid-row: 1/2;
+}
+.bookShelf {
+  display: grid;
+  grid-template-columns: 1;
+  grid-row: 2/3;
 }
