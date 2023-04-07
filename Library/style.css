@@ -31,9 +31,32 @@
   height: 25px;
   margin: 10px;
   grid-row: 1/2;
+  border-radius: 11px;
 }
 .bookShelf {
   display: grid;
   grid-template-columns: 1;
   grid-row: 2/3;
+  margin-left: 5px;
+}
+.books > h1 {
+  font-size: 1rem;
+  padding: 2px;
+}
+.books > p {
+  font-size: 0.8rem;
+  padding: 2px;
+}
+.btnRemove {
+  background: url("bookmark-remove.svg") center no-repeat;
+  height: 1rem;
+  width: 1rem;
+  margin: 5px;
+  border-radius: 30px;
+}
+.btnRead {
+  background: url("read.svg") center no-repeat;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 30px;
 }
