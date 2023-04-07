@@ -39,24 +39,43 @@
   grid-row: 2/3;
   margin-left: 5px;
 }
-.books > h1 {
-  font-size: 1rem;
-  padding: 2px;
+.books {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 0.5fr;
+  grid-template-rows: auto auto;
+  align-items: center;
+  justify-items: end;
+  border: 0.5px solid red;
+  border-radius: 11px;
+  margin: 5px;
 }
-.books > p {
+.books > h1 {
+  font-size: 1.5rem;
+  padding: 2px;
+  grid-column: 1/4;
+}
+.auther {
   font-size: 0.8rem;
   padding: 2px;
+  grid-column: 2/4;
+  grid-row: 2;
 }
 .btnRemove {
   background: url("bookmark-remove.svg") center no-repeat;
-  height: 1rem;
-  width: 1rem;
+  height: 2rem;
+  width: 2rem;
   margin: 5px;
   border-radius: 30px;
+  grid-column: 1;
+  grid-row: 2/3;
+  justify-self: baseline;
 }
 .btnRead {
   background: url("read.svg") center no-repeat;
-  height: 1rem;
-  width: 1rem;
+  height: 2rem;
+  width: 2rem;
   border-radius: 30px;
+  grid-column: 3;
+  grid-row: 2/3;
+  justify-self: baseline;
 }
