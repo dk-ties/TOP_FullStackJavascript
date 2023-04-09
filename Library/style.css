@@ -203,3 +203,7 @@
   }
 }
 /* Styling book showing */
+
+.showBook {
+  display: grid;
+}
