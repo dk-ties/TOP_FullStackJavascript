@@ -26,6 +26,8 @@
 }
 .content {
   flex: 5;
+  display: flex;
+  justify-content: space-around;
 }
 .addNewBook {
   height: 25px;
@@ -206,4 +208,21 @@
 
 .showBook {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  gap: 25px;
+}
+
+.ShowBookLabel {
+  grid-column: 1/2;
+  font-weight: bold;
+  justify-self: end;
+}
+.ShowBookContent {
+  grid-column: 2/3;
+  justify-self: start;
 }
