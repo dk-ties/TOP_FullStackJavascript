@@ -26,7 +26,7 @@
 
       <div class="middle">
         <div class="sidebar">
-          <button class="addNewBook">Add a new book</button>
+          <button class="addNewBook" id="addNewBook" >Add a new book</button>
           <div class="bookShelf">
             <div class="books">
               <h1>
@@ -71,7 +71,7 @@
           </div>
         </div>
         <div class="content">
-          <div class="newBookForm" hidden>
+          <div class="newBookForm" id="newBookForm" hidden>
             <h1>Add new book to your bookshelf</h1>
             <form action="newBook">
               <div class="form-row">
@@ -106,7 +106,8 @@
               </div>
             </form>
           </div>
-          <div class="showBook">
+          <div class="showBookContainer" id="showBookContainer" hidden>
+          <div class="showBook" hidden>
             <div class="ShowBookLabel">Title:</div>
             <div class="ShowBookContent" id="ShowBookTitleTitle">
               Lord of the Rings
@@ -124,6 +125,7 @@
             <div class="ShowBookLabel">Read:</div>
             <div  class="ShowBookContent id="ShowBookReadRead">Yes</div>
           </div>
+        </div>
         </div>
       </div>
       <div class="footer">
