@@ -61,3 +61,34 @@ function funcResetForm() {
 
 // Setting up array to work as bookShelf
 const bookShelf = [];
+
+// adding books from bookshelf to html bookshelf
+function bookShelfShowerRemover(shelfTitle, shelfAuther, shelfPages) {
+  const bookShelfBody = document.getElementById("bookShelf");
+  const newBookTemplate = document.getElementById("newBookShelf");
+  while (bookShelfBody.lastElementChild) {
+    bookShelfBody.removeChild(bookShelfBody.lastElementChild);
+  }
+
+  const clone = newBookTemplate.content.cloneNode(true);
+  clone.getElementById("bookTitle").innerHTML = shelfTitle;
+  clone.getElementById("bookAuther").textContent = shelfAuther;
+  clone.getElementById("bookPages").innerHTML = `${shelfPages} Sider`;
+
+  bookShelfBody.appendChild(clone);
+}
+bookShelf.forEach((element, index, Array) => {
+  bookShelfShower(element.title, element.author, element.pages);
+});
+
+function bookShelfShower(shelfTitle, shelfAuther, shelfPages) {
+  const bookShelfBody = document.getElementById("bookShelf");
+  const newBookTemplate = document.getElementById("newBookShelf");
+
+  const clone = newBookTemplate.content.cloneNode(true);
+  clone.getElementById("bookTitle").innerHTML = shelfTitle;
+  clone.getElementById("bookAuther").textContent = shelfAuther;
+  clone.getElementById("bookPages").innerHTML = `${shelfPages} Sider`;
+
+  bookShelfBody.appendChild(clone);
+}
