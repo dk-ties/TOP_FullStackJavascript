@@ -1,8 +1,9 @@
-function getBook(title, author, pages) {
+function getBook(title, author, pages, isRead) {
   this.title = title;
   this.author = author;
   this.pages = pages;
-  this.info = `${title} by ${author}, ${pages} pages, not read yet`;
+  this.read = isRead;
+  this.info = `${title} by ${author}, ${pages} pages, have you read the book: ${isRead}`;
   return title + author + pages;
 }
 
@@ -31,11 +32,19 @@ const txtInputPagenumbers = document.getElementById("newBookPages");
 const isReadInput = document.getElementById("newBookRead");
 
 function funcSubmitForm() {
+  const newBooks = new getBook(
+    txtInputTitle.value,
+    txtInputAuthers.value,
+    txtInputPagenumbers.value,
+    isReadInput.value
+  );
+  bookShelf.push(newBooks);
   console.log(txtInputTitle.value);
   console.log(txtInputAuthers.value);
   console.log(txtInputPagenumbers.value);
   console.log(isReadInput.value);
   funcResetForm();
+  console.log(txtInputTitle.value);
 }
 // setting up reset btn
 const btnReset = document.getElementById("btnResetForm");
@@ -49,3 +58,6 @@ function funcResetForm() {
 }
 
 // Getting info from the form, on click
+
+// Setting up array to work as bookShelf
+const bookShelf = [];
