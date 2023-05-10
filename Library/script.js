@@ -35,13 +35,17 @@ function funcSubmitForm() {
   console.log(txtInputAuthers.value);
   console.log(txtInputPagenumbers.value);
   console.log(isReadInput.value);
+  funcResetForm();
 }
 // setting up reset btn
 const btnReset = document.getElementById("btnResetForm");
 btnReset.addEventListener("click", funcResetForm);
 
 function funcResetForm() {
-  console.log("hey babe, You reset me bitch!");
+  txtInputTitle.value = "";
+  txtInputAuthers.value = "";
+  txtInputPagenumbers.value = "";
+  isReadInput.checked = false;
 }
 
 // Getting info from the form, on click
