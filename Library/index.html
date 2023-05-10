@@ -76,33 +76,33 @@
             <form action="newBook">
               <div class="form-row">
                 <label for="newBookTitle">Title of the book:</label>
-                <input type="text" class="newBookTitle" />
+                <input type="text" class="newBookTitle" id="newBookTitle"/>
               </div>
               <div class="form-row">
                 <label for="newBookAuther">Authers Title:</label>
-                <input type="text" class="newBookAuther" />
+                <input type="text" class="newBookAuther" id="newBookAuther"/>
               </div>
               <div class="form-row">
                 <label class="checkbox-label1" for="newBookPages"
                   >Number of Pages:</label
                 >
-                <input type="number" class="newBookPages" />
+                <input type="number" class="newBookPages" id="newBookPages"/>
               </div>
               <div class="form-row">
                 <label class="checkbox-label" for="newBookRead"
                   >Have you read the book:</label
                 >
-                <input type="checkbox" value="Yes" />
+                <input type="checkbox" value="Yes" id="newBookRead"/>
               </div>
               <div class="form-row">
                 <label for="submit"
                   >Will you add this book to your bookshelf</label
                 >
-                <button>Submit</button>
+                <button type="button" id="btnSubmitForm">Submit</button>
               </div>
               <div class="form-row">
                 <label for="reset">Or start all over</label>
-                <button>reset</button>
+                <button type="button" id="btnResetForm">reset</button>
               </div>
             </form>
           </div>
